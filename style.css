@@ -1,0 +1,315 @@
+/* -------------------- */
+/* RESET E CONFIGURAÇÃO */
+/* -------------------- */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:'Poppins', sans-serif;
+color:white;
+
+/* GRADIENTE PRINCIPAL */
+
+background: linear-gradient(135deg,#441e8a,#2a0f2a,#441e8a);
+
+background-size:400% 400%;
+
+animation:gradientMove 12s ease infinite;
+
+min-height:100vh;
+
+}
+
+
+/* -------------------- */
+/* ANIMAÇÃO DO FUNDO */
+/* -------------------- */
+
+@keyframes gradientMove{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
+
+/* -------------------- */
+/* NAVBAR */
+/* -------------------- */
+
+.navbar{
+
+background:rgba(42,15,42,0.6);
+
+backdrop-filter:blur(12px);
+
+border-bottom:1px solid rgba(255,255,255,0.1);
+
+transition:0.3s;
+
+}
+
+.navbar-brand{
+
+font-weight:bold;
+font-size:1.5rem;
+
+}
+
+.nav-link{
+
+color:white !important;
+transition:0.3s;
+
+}
+
+.nav-link:hover{
+
+color:#c5a7ff !important;
+
+}
+
+
+/* -------------------- */
+/* HERO SECTION */
+/* -------------------- */
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+background:linear-gradient(135deg,#441e8a,#2a0f2a);
+
+background-size:300% 300%;
+
+animation:gradientMove 10s ease infinite;
+
+}
+
+.hero h1{
+
+font-size:3.5rem;
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:1.2rem;
+opacity:0.9;
+
+}
+
+
+/* -------------------- */
+/* BOTÕES */
+/* -------------------- */
+
+.btn-primary{
+
+background:linear-gradient(135deg,#441e8a,#2a0f2a);
+
+border:none;
+
+padding:12px 25px;
+
+border-radius:8px;
+
+transition:0.3s;
+
+}
+
+.btn-primary:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 0 20px #441e8a;
+
+}
+
+
+/* -------------------- */
+/* CARDS TECNOLOGIA */
+/* -------------------- */
+
+.tech-card{
+
+background:rgba(255,255,255,0.05);
+
+backdrop-filter:blur(10px);
+
+border-radius:15px;
+
+padding:30px;
+
+text-align:center;
+
+transition:0.4s;
+
+border:1px solid rgba(255,255,255,0.1);
+
+margin-bottom:30px;
+
+}
+
+.tech-card i{
+
+margin-bottom:15px;
+color:#c5a7ff;
+
+}
+
+.tech-card:hover{
+
+transform:translateY(-10px) scale(1.05);
+
+box-shadow:0 0 25px #441e8a;
+
+}
+
+
+/* -------------------- */
+/* SEÇÃO STATS */
+/* -------------------- */
+
+.stats{
+
+padding:80px 0;
+
+background:linear-gradient(135deg,#2a0f2a,#441e8a);
+
+}
+
+.counter{
+
+font-size:3rem;
+font-weight:bold;
+
+}
+
+
+/* -------------------- */
+/* FORMULÁRIOS */
+/* -------------------- */
+
+form{
+
+background:rgba(255,255,255,0.05);
+
+padding:30px;
+
+border-radius:15px;
+
+backdrop-filter:blur(10px);
+
+}
+
+.form-control{
+
+background:rgba(255,255,255,0.1);
+
+border:none;
+
+color:white;
+
+}
+
+.form-control:focus{
+
+background:rgba(255,255,255,0.15);
+
+color:white;
+
+box-shadow:0 0 10px #441e8a;
+
+}
+
+
+/* -------------------- */
+/* FOOTER */
+/* -------------------- */
+
+footer{
+
+background:rgba(0,0,0,0.4);
+
+padding:40px;
+
+margin-top:50px;
+
+text-align:center;
+
+}
+
+footer i{
+
+font-size:1.5rem;
+
+margin:10px;
+
+transition:0.3s;
+
+}
+
+footer i:hover{
+
+color:#c5a7ff;
+transform:scale(1.2);
+
+}
+
+
+/* -------------------- */
+/* IMAGENS */
+/* -------------------- */
+
+img{
+
+max-width:100%;
+
+border-radius:10px;
+
+}
+
+
+/* -------------------- */
+/* RESPONSIVIDADE */
+/* -------------------- */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.2rem;
+}
+
+.hero p{
+font-size:1rem;
+}
+
+.tech-card{
+padding:20px;
+}
+
+}
